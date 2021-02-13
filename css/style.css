@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo img{
+    width: 48%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nav-list{
+    width: 50%;
+    
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+.nav-list li a:hover{
+    color: rgb(252, 250, 253);
+    text-shadow: 3px 3px 2px rgb(25, 1, 131);
+    font-size: 25px;
+    transition: 0.3s;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
+.rightnav{
+    padding: 0px 23px;
+    width: 50%;
+    text-align: right;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid rgb(18, 3, 73);
+    border-radius: 9px;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.6) url('https://wallpapercave.com/wp/wp1851486.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: cursive;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.firsthalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondhalf{
+    width: 30%;
+}
+
+.secondhalf img{
+    width: 85%;
+    padding: 2px 0;
+    border: 4px solid white;
+    border-radius: 200px;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 41px;
+    font-weight: 900;
+    padding: 10px 0px;
+    text-shadow: 2px 2px 2px rgb(39, 21, 88);
+}
+
+.text-small{
+    font-size: 20px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 8px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 20px;
+    background: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    background-color: violet;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn-sm{
+    padding: 3px 10px;
+    vertical-align: middle;
+}
+
+.section{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 80%;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+}
+.sectionleft{
+     /* height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 80%; */
+    flex-direction: row-reverse;
+}
+
+
+.paras{
+    padding: 25px;
+}
+
+.contact{
+    background-color: rgb(236, 235, 235);
+    height: 833px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+.text-center{
+    text-align: center;
+    padding: 15px;
+}
+
+.form{
+   
+    margin: auto;
+    max-width: 646px;
+    margin: 8px auto
+}
+
+.form-input{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    margin: 24px 0px;
+    padding: 6px;
+}
+
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+}
+
+.textfooter{
+    text-align: center;
+    padding: 12px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: white;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1140px) {
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.5s ease-out;
+        height: 471px;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+      
+    }
+    .height-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        visibility: hidden;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px;
+    }
+    
+}
+
